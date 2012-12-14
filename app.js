@@ -21,7 +21,7 @@ app.use(express.logger());
 app.use(express.compress());
 
 // enable cookie support
-app.use(express.cookieParser("abcdefg"));
+app.use(express.cookieParser("issue tracker secr3t value"));
 
 // enable session support
 app.use(express.session());
