@@ -1,8 +1,8 @@
 var express = require('express')
 	, app = express()
-	, publicFolder = __dirname + '\\public'
-	, bootstrapDir = __dirname + '\\public\\bootstrap'
-	, viewDir = __dirname + '\\views'
+	, publicFolder = __dirname + '/public'
+	, bootstrapDir = __dirname + '/public/bootstrap'
+	, viewDir = __dirname + '/views'
 	, config = require('./config')()
 	;
 
