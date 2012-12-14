@@ -10,10 +10,10 @@ var express = require('express')
 app.use(app.router);
 
 // any urls that start with /static will access the files in the public folder
-app.use('/static', express.static(publicFolder));
+app.use('/static', express['static'](publicFolder));
 
 // any urls that start with /bootstrap will access the twitter bootstrap
-app.use('/bootstrap', express.static(bootstrapDir));
+app.use('/bootstrap', express['static'](bootstrapDir));
 
 // log user access
 app.use(express.logger());
@@ -46,7 +46,7 @@ app.set('views', viewDir);
 app.set('view engine', 'jade');
 
 // all this app to run behind a proxy
-app.enable('trust proxy')
+app.enable('trust proxy');
 
 // pretty-print the html output in dev mode
 app.configure('development', function(){

@@ -2,7 +2,7 @@
  * This module defines all of the url routes.
 */
 
-var express = require('express')
+var express = require('express');
 
 module.exports = function(app) {
 
@@ -10,5 +10,5 @@ module.exports = function(app) {
 		res.render('index', {title:''});
 	});
 
-}
+};
 
