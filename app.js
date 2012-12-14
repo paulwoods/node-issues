@@ -52,10 +52,8 @@ app.configure('development', function(){
 	app.locals.pretty = true;
 });
 
-
-require('./boot')(app, {});
-
-
+// add all of the routes
+require('./routes')(app);
 
 app.listen(3000);
 
