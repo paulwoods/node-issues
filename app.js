@@ -2,8 +2,9 @@ var express = require('express')
 	, app = express()
 	, publicFolder = __dirname + '\\public'
 	, bootstrapDir = __dirname + '\\public\\bootstrap'
-	, viewDir = __dirname + '\\views';
-
+	, viewDir = __dirname + '\\views'
+	, config = require('./config')()
+	;
 
 // build the routes
 app.use(app.router);
@@ -55,6 +56,6 @@ app.configure('development', function(){
 // add all of the routes
 require('./routes')(app);
 
-app.listen(8080);
+app.listen(config.port);
 
-console.log('Listening on port 8080');
+console.log('Listening on port: ' + config.port);
