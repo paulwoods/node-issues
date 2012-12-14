@@ -1,0 +1,30 @@
+extends layout
+
+block content
+ 
+  .navbar.navbar-inverse.navbar-fixed-top
+    .navbar-inner
+      .container
+        a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+          span.icon-bar"
+          span.icon-bar"
+          span.icon-bar"
+        
+        a.brand(href="#") Project name
+
+        div.nav-collapse.collapse
+          ul.nav
+            li.active
+              a(href="#") Home
+            li
+              a(href="#about") About
+            li
+              a(href="#contact") Contact
+
+  .container
+  
+    h1= "Bootstrap starter template"
+    p
+      | Use this document as a way to quick start any new project.
+      br
+      | All you get is this   message and a barebones HTML document.
