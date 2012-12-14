@@ -8,3 +8,6 @@ org/paulwoods/node-issues)
 
 Home page: http://paulwoods.github.com/node-issues
 
+Deployed at: http://salty-mountain-8966.herokuapp.com
+
+
