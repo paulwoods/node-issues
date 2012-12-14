@@ -2,6 +2,10 @@
 	"name": "node-issues",
 	"version": "0.0.1",
 	"description": "A issue tracker built with node.",
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x",
+	},
 	"main": "issues.js",
 	"dependencies": {
 		"express": "~3.0.4",
