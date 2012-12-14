@@ -49,7 +49,6 @@ app.enable('trust proxy')
 
 // pretty-print the html output in dev mode
 app.configure('development', function(){
-	app.use(express.errorHandler());
 	app.locals.pretty = true;
 });
 

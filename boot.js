@@ -1,15 +1,11 @@
 
 var express = require('express')
 
-module.exports = function(parent, options) {
-
-	var app = express();
+module.exports = function(app, options) {
 
 	app.get('/', function(req, res, next) {
-		res.render('data', {title:'Paul Woods'});
+		res.render('data', {title:''});
 	});
 
-
-	parent.use(app)
 }
 
