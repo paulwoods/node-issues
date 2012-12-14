@@ -56,6 +56,8 @@ app.configure('development', function(){
 // add all of the routes
 require('./routes')(app);
 
-app.listen(config.port);
+var port = process.env.PORT || config.port || 3000;
 
-console.log('Listening on port: ' + config.port);
+app.listen(port);
+
+console.log('Listening on port: ' + port);
